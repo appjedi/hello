@@ -73,12 +73,14 @@
         }
       }
       alert(JSON.stringify(settings));
+	  /*
       $.ajax(settings).done(function (response) {
         alert("done");
         console.log(response);
 
       });
-      /*
+	  */
+      
             fetch(getAuthURL, {
               method: "GET",
               mode: 'no-cors',
@@ -86,9 +88,7 @@
             }).then(function (resp) {
               console.log(resp.json());
               alert(JSON.stringify(resp));
-            });
-      
-            /*
+            })
             .then(response => (json) => {
               alert("done");
               console.log(json);
@@ -102,7 +102,7 @@
                 resultElement.innerText = result;
                 resultLink.href = authUrl;
               });
-              */
+              
     };
 
     const codeValue = document.getElementById("code");
